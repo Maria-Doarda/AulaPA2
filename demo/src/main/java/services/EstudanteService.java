@@ -3,6 +3,8 @@ package services;
 import models.EstudanteModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import repositories.EstudanteRepository;
 
 import java.util.List;
@@ -13,14 +15,14 @@ public class EstudanteService {
     @Autowired
     private EstudanteRepository estudanteRepository;
 
-    public EstudanteModel criarEstudante(EstudanteModel estudanteModel){
+    public EstudanteModel criarEstudante(@RequestBody EstudanteModel estudanteModel){
         return estudanteModel;
     }
     public List<EstudanteModel> findAll(){
         return estudanteRepository.findAll();
     }
 
-    public void deletar(Long id){
+    public void deletar(@PathVariable Long id){
         estudanteRepository.deleteById(id);
     }
 

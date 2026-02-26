@@ -1,11 +1,9 @@
-package services;
+package com.example.nsei.services;
 
-import models.EstudanteModel;
+import com.example.nsei.models.EstudanteModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import repositories.EstudanteRepository;
+import com.example.nsei.repositories.EstudanteRepository;
 
 import java.util.List;
 

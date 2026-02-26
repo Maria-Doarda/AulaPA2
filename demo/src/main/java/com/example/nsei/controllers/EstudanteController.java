@@ -1,9 +1,9 @@
-package controllers;
+package com.example.nsei.controllers;
 
-import models.EstudanteModel;
+import com.example.nsei.models.EstudanteModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import services.EstudanteService;
+import com.example.nsei.services.EstudanteService;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package repositories;
+package com.example.nsei.repositories;
 
-import models.EstudanteModel;
+import com.example.nsei.models.EstudanteModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EstudanteRepository extends JpaRepository<EstudanteModel, Long> {

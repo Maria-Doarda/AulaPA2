@@ -15,14 +15,14 @@ public class EstudanteService {
     @Autowired
     private EstudanteRepository estudanteRepository;
 
-    public EstudanteModel criarEstudante(@RequestBody EstudanteModel estudanteModel){
+    public EstudanteModel criarEstudante(EstudanteModel estudanteModel){
         return estudanteModel;
     }
     public List<EstudanteModel> findAll(){
         return estudanteRepository.findAll();
     }
 
-    public void deletar(@PathVariable Long id){
+    public void deletar(Long id){
         estudanteRepository.deleteById(id);
     }
 

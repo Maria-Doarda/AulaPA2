@@ -19,13 +19,13 @@ public class EstudanteController {
         return estudanteService.criarEstudante(estudanteModel);
     }
 
- @GetMapping
+    @GetMapping
     public List<EstudanteModel> buscarEstudantes(){
         return estudanteService.findAll();
     }
 
     @DeleteMapping("/{id}")
-    public void deletarEstudante(Long id){
+    public void deletarEstudante(@PathVariable Long id){
         estudanteService.deletar(id);
     }
 
